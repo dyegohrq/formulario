@@ -52,7 +52,8 @@ function checkInputs() {
 
     const formControls = form.querySelectorAll('.form-control'); // Retorna uma lista de elementos presentes no documento (usando ordenação em profundidade, pré-ordenada e transversal dos nós do documento) que coincidam com o grupo de seletores especificado. O objeto retornado é uma NodeList.
 
-    const formIsValid = [... formControls].every((formControl) => {
+    // O método every() testa se todos os elementos do array passam pelo teste implementado pela função fornecida. Este método retorna um valor booleano.
+    const formIsValid = [... formControls].every ((formControl) => {
         return (formControl.class === 'form-control success');
     });
 
